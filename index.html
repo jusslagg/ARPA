@@ -17,29 +17,17 @@
 
     <header class="header-landing">
         <div class="wrap-logo">
-            <img src="/img/LOGO ARPA.png" alt="" class="logo-header">
+            <img src="/img/logo arpa 3-Photoroom.png" alt="" class="logo-header">
         </div>
     </header>
 
     <div class="wrap-text-column">
         <h1>ARPA Consultora</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis, nemo distinctio
-            beatae quod molestiae illo dolores voluptas quae, autem corrupti maiores similique earum eaque
-            aliquam at modi doloribus. Nam officiis sequi modi! Ipsum, vel!</p>
+        <p>Líder en el ámbito de la consultoría psicológica y desarrollo personal, nos dedicamos a ofrecer cursos especializados que impulsan el crecimiento y bienestar integral. Nuestro compromiso es transformar vidas a través del conocimiento y la práctica guiada, brindando herramientas innovadoras y técnicas efectivas basadas en la psicología contemporánea. Con un equipo de expertos multidisciplinarios, adaptamos cada curso para satisfacer las necesidades individuales y organizacionales, promoviendo así un impacto positivo y duradero en nuestros clientes. En Consultora Arpa, nos enorgullece guiar a nuestros participantes hacia un camino de autodescubrimiento, desarrollo personal y profesional, consolidando así su potencial humano y su capacidad para alcanzar metas significativas.</p>
         <div class="wrap-cta">
             <a href="/" class="cta-a">Llamada a la acción</a>
         </div>
     </div>
-    </section>
-
-    <section class="section logos-section">
-        <div class="wrap-logos-section">
-            <img src="img/logo-Google.png" alt="" class="logo-brand">
-            <img src="img/ikea-logo.jpg" alt="" class="logo-brand">
-            <img src="img/mercedes-logo.svg" alt="" class="logo-brand">
-            <img src="img/Apple-logo.svg" alt="" class="logo-brand">
-            <img src="img/zara-logo.jpg" alt="" class="logo-brand">
-        </div>
     </section>
 
     <section class="section servicios-section">
@@ -69,11 +57,6 @@
     </section>
 
     <section class="section two-column-section">
-
-        <div class="wrap-title-section">
-            <h2>Características de nuestros Servicios</h2>
-        </div>
-
         <div class="wrap-two-column">
             <div class="wrap-img_two-column">
                 <img src="img/disenador-trabajando.jpeg" alt="">
@@ -82,9 +65,21 @@
             <div class="wrap-img_two-column">
                 <div class="wrap-text-column">
                     <h3>Más Características</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facilis, nemo distinctio
-                        beatae quod molestiae illo dolores voluptas quae, autem corrupti maiores similique earum eaque
-                        aliquam at modi doloribus. Nam officiis sequi modi! Ipsum, vel!</p>
+                    <p>Experiencialidad Profunda: Nos centramos en crear experiencias de aprendizaje significativas y transformadoras para cada participante.
+
+                        Metodología Activa: Utilizamos metodologías participativas que involucran a los estudiantes de manera activa en el proceso de aprendizaje.
+                        
+                        Aprendizaje Basado en Problemas: Diseñamos cursos que abordan desafíos reales y aplicaciones prácticas, fomentando así el aprendizaje a través de la resolución de problemas.
+                        
+                        Personalización y Adaptabilidad: Adaptamos nuestros cursos para satisfacer las necesidades individuales y los objetivos de desarrollo personal de cada participante.
+                        
+                        Feedback Continuo: Proporcionamos retroalimentación constante y constructiva para facilitar el crecimiento personal y profesional de nuestros estudiantes.
+                        
+                        Integración Teórico-Práctica: Combinamos teoría con práctica de manera efectiva, asegurando que los participantes no solo adquieran conocimientos, sino que también puedan aplicarlos en su vida cotidiana.
+                        
+                        Empoderamiento Personal: Promovemos el autoconocimiento, la confianza en sí mismo y el desarrollo de habilidades que permitan a los participantes alcanzar sus metas y potenciar su bienestar emocional.
+                        
+                        Red de Apoyo y Colaboración: Fomentamos un ambiente de apoyo mutuo entre los participantes, facilitando redes de colaboración y aprendizaje continuo.</p>
                     <div class="wrap-cta">
                         <a href="/" class="cta-a">Llamada a la acción</a>
                     </div>
@@ -105,24 +100,24 @@
             <div class="wrap-img_two-column">
                 <div class="wrap-text-column">
                     <h3>Contacta con nosotros</h3>
-                    <form>
+                    <form id="contactForm" action="http://localhost:3000/send-email" method="POST">
                         <div class="container">
                             <div class="row">
-                                <div class="row">
-                                    <div class="col-sm-12 col-md-6 col-lg-6">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
                                     <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" required>
                                     <div id="emailHelp" class="form-text"></div>
                                 </div>
                                 <div class="col-sm-12 col-md-6 col-lg-6">
                                     <label for="exampleInputNombre" class="form-label">Nombre y Apellido</label>
-                                    <input type="text" class="form-control" id="exampleInputNombre">
+                                    <input type="text" class="form-control" id="exampleInputNombre" name="nombre" required>
                                 </div>
                                 <label for="mensaje">Mensaje:</label>
                                 <br>
                                 <textarea name="mensaje" id="mensaje" rows="4" cols="40" required=""></textarea>
                                 <input type="submit" value="Enviar" class="cta-a">
+                            </div>
+                        </div>
                     </form>
 
                 </div>
@@ -139,11 +134,11 @@
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="./IMG/victor.jpeg" class="card-img-top" alt="victor">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <h5 class="card-title">Victor Hugo Benitez Lopez
+                            </h5>
+                            <p class="card-text">Psicólogo. Especialista en Salud Mental y Apoyo Psicosocial y Primeros Auxilios Psicológicos. Especialista en Salud Comunitaria. Especialista en Gestión de Riesgos y Desastres</p>
                             <a href="https://www.linkedin.com/in/vhbl" class="btn btn-primary">Perfil de Linkedn</a>
                         </div>
                     </div>
@@ -153,11 +148,10 @@
                         <img src="./IMG/eugenia.jpg" class="card-img-top" alt="Eugenia">
                         <div class="card-body">
                             <h5 class="card-title">Eugenia Buceta</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <p class="card-text">Coordinadora Nacional de Salud Mental y Apoyo Psicosocial MHPSS SMAPS</p>
                             <a href="http://www.linkedin.com/in/bucetamariaeugenia" class="btn btn-primary">Perfil de
                                 Linkedn</a>
-                        </div>
+                        </div> 
                     </div>
                 </div>
                 <div class="wrap-footer-section">
@@ -204,12 +198,15 @@
                 </div>
 
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+        <script src="./JS/main.js"></script>
+    <script src="./JS/api.js"></script>
 </body>
 
 </html>

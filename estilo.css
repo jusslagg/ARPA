@@ -1,212 +1,166 @@
-:root{
-    --main-c:#42627c;
-    --border-r:.2rem;
-  }
-  
-  /** Estilos Generales **/
-  
-  html *{
-   margin: 0; 
-   padding: 0;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  p{
-    font-size: 1.1rem;
-  }
-  
-  a{
-    text-decoration: none;
-  }
-  
-  ul, li{
-    list-style: none;
-  }
-  
-  .wrap-cta{
-    padding: 1.5rem 0;
-  }
-  
-  .cta-a{
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.2rem;
-    background-color: var(--main-c);
-    padding: .5rem 1rem;
-    border-radius: var(--border-r);
-  }
-  
-  h1{
-    font-size: 2.8rem;
-  }
-  h2{
-    font-size: 2.5rem;
-  }
-  h3{
-    font-size: 2.2rem;
-  }
-  
-  /** Header **/
-  
-  .header-landing{
-    display: flex;
-    justify-content: center;
-    background: #f2f2f2;
-    padding: 0.25rem;
-  }
-  
-  .logo-header{
-    max-width: 300px;
-    height: 100%;
-    width: 100%;
-  }
-  
-  /** Hero Section **/
-  
-  .hero-section{
-    height: 90vh;
-    background: url(img/img-hero-agencia.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgba(41, 142, 206, 0.7);
-    background-blend-mode: multiply;
-    display: flex;
-    align-items: center;
-  }
-  
-  .wrap-hero-section{
-    max-width: 600px;
-    color: #fff;
-    padding: 15%;
-  }
-  
-  /** Logo Brand Section **/
-  .secetion{
-    margin: 5rem 0;
-  }
-  
-  .section h2{
-    padding: 2rem 0;
-  }
-  
-  .wrap-logos-section{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .logo-brand{
-    width: 200px;
-    padding: 1rem 2rem;
-    filter: grayscale(1);
-  }
-  
-  /** Wrap Title **/
-  
-  .wrap-title-section{
-    display: flex;
-    justify-content: center;
-    margin: 3rem 1rem;
-  }
-  
-  /** Servicios Section **/
-  
-  .wrap-servicios-section{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-  }
-  
-  .item-servicios-section{
-    padding: 1rem;
-  }
-  
-  .item-servicios-section img{
-    width: 300px;
-    height: 225px;
-  }
-  
-  /** Two Columns Section **/
-  
-  .wrap-two-column{
-    
-    margin: 0 auto;
-  }
-  
-  .wrap-img_two-column{
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-  }
-  
-  .wrap-text-column h3{
-    padding: 2rem 0;
-  }
-  
-  .wrap-text-column p{
-    padding-bottom: 1rem;
-  }
-  
-  /** Form Section **/
-  
-  section.two-column-section.form{
-    background-color: #f2f2f2;
-    padding: 3rem 0;
-  }
-  
-  .form input, .form textarea{
-    display: flex;
-    width: 100%;
-    line-height: 1.75rem;
-    border: 1.5px solid #fff;
-    border-radius: var(--border-r);
-  }
-  
-  .form textarea{
-    min-height: 200px;
-  }
-  
-  input[type="submit"]{
-    border: 0;
-    display: inline;
-    cursor: pointer;
-  }
-  
-  /** Footer **/
-  
-  .footer-section{
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .menu-footer-section{
-    padding: 1rem 0;
-  }
-  
-  .wrap-social-logos ul, .wrap-menu-footer-section ul{
-    display: flex;
-    justify-content: center;
-  }
-  
-  .social-logo{
-    max-width: 75px;
-    width: 100%;
-    padding: 1rem;
-  }
-  
-  .wrap-menu-footer-section ul li{
-    font-size: 1.1rem;
-    padding: 1.5rem;
-  }
-  
-  .footer-creds{
-    display: flex;
-    justify-content: center;
-  }
-  .container{
-    margin: 0 auto;
-  }
+/* Estilos generales */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header */
+
+.header-landing {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.logo-header {
+  max-width: 150px;
+  height: auto;
+}
+
+/* Textos principales */
+
+.wrap-text-column {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.wrap-text-column h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.wrap-text-column p {
+  color: #666;
+}
+
+.wrap-cta {
+  margin-top: 20px;
+}
+
+.cta-a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-a:hover {
+  background-color: #0056b3;
+}
+
+/* Servicios */
+
+.servicios-section {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.wrap-servicios-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.item-servicios-section {
+  flex-basis: 300px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.item-servicios-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Dos columnas */
+
+.two-column-section {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.wrap-two-column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.wrap-img_two-column img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.wrap-text-column ul {
+  list-style-type: disc;
+  color: #666;
+  padding-left: 20px;
+}
+
+/* Formulario de contacto */
+
+.form {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.form-control {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Centrado del formulario */
+.form .wrap-two-column {
+  justify-content: center;
+}
+
+/* Footer */
+
+.footer-section {
+  background-color: #343a40;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.social-logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.menu-footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-footer-section ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menu-footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-creds {
+  margin-top: 20px;
+}
