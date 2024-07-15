@@ -164,3 +164,20 @@ body {
 .footer-creds {
   margin-top: 20px;
 }
+.styled-paragraph {
+  background-color: #f0f0f0; /* Color de fondo del cuadro */
+  border: 1px solid #ccc; /* Borde del cuadro */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espacio interior del cuadro */
+  margin-bottom: 20px; /* Espacio inferior entre cuadros */
+}
+/* Estilos adicionales para las tarjetas en el footer */
+.card {
+  border: none; /* Quita el borde de las tarjetas */
+}
+
+.card-img-top {
+  object-fit: cover; /* Ajusta la imagen dentro de la tarjeta */
+  border-top-left-radius: 8px; /* Esquinas redondeadas para la imagen */
+  border-top-right-radius: 8px;
+}
